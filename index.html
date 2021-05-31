@@ -2,11 +2,63 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <title>Test technique</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles.css" />
 </head>
 <body>
-    <!-- Les images et logos sont disponibles dans ./resources -->
-    <img src="./resources/hotel.jpg"/>
+    <div class="hotel-card">
+        <img src="./resources/hotel.jpg" class="hotel-card__img"/>
+        <div class="hotel-card__infos">
+            <div class="hotel-card__header">
+                <h4 class="hotel-card__title">
+                    Novotel Paris Les Halles
+                </h4>
+                <span class="hotel-card__rating">
+                  <img src="resources/rating-star.svg" alt="rating star" class="icon"/>
+                  <img src="resources/rating-star.svg" alt="rating star" class="icon"/>
+                  <img src="resources/rating-star.svg" alt="rating star" class="icon"/>
+                  <img src="resources/rating-star.svg" alt="rating star" class="icon"/>
+                </span>
+            </div>
+            <span class="hotel-card__main-infos">Hôtels - 0,6km de votre recherche</span>
+            <div class="tripadvisor-rating">
+                <img src="resources/tripadvisor.png" alt="tripadvisor rating" class="tripadvisor-rating__icon"/>
+                <span class="tripadvisor-rating__label">4/5</span>
+                <span class="tripadvisor-rating__reviews-number">(5563 Avis)</span>
+            </div>
+            <div class="hotel-card__services">
+                <img src="resources/parking.svg" alt="parking" class="icon">
+                <img src="resources/wifi.svg" alt="wifi" class="icon">
+                <img src="resources/restaurant.svg" alt="restaurant" class="icon">
+                <img src="resources/air-conditioning.svg" alt="air conditionné" class="icon">
+                <img src="resources/beverage.svg" alt="bar" class="icon">
+            </div>
+            <div class="price-section">
+                <div class="price-section__title">
+                    Tarif à partir de (1)
+                </div>
+                <div class="price-section__content">
+                    <span class="price-section__label">Pour 1 nuit | 1 adulte</span>
+                    <div>
+                        <span class="price-section__value">
+                            Public <span class="price">220</span> €
+                        </span>
+                        <span class="price-section__value price-section__value--member">
+                            Membre
+                            <span class="price">209</span> €
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="hotel-card__actions">
+                <a href="#" class="link">Voir le calendrier des prix</a>
+                <button class="button">Sélectionner une chambre</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="bundle.js"></script>
 </body>
 </html>

@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: $spacing-small;
+  font-family: $font-main;
+  font-size: 16px;
+}
+
+// could be placed in specific files
+.button {
+  padding: $spacing-small $spacing-medium;
+  white-space: nowrap;
+  border: none;
+  border-radius: 15px;
+  background: $color-primary;
+  color: $color-clear;
+}
+
+.link {
+  font-size: $font-size-small;
+  color: $color-tertiary;
+}

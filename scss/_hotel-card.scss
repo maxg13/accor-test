@@ -1,0 +1,138 @@
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  border-radius: 6px;
+  padding: $spacing-large;
+  -webkit-box-shadow: 0 0 11px -2px $color-dark;
+  box-shadow: 0 0 11px -2px $color-dark;
+  @media (min-width: $breakpoint-mobile-landscape) {
+    flex-direction: row;
+  }
+  &__img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 0 $spacing-medium;
+    border-radius: 10px;
+    @media (min-width: $breakpoint-mobile-landscape) {
+      width: auto;
+      margin: 0 $spacing-large 3rem 0;
+    }
+  }
+  &__infos {
+    flex: 1;
+  }
+  &__header {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__title {
+    margin: 0 0 0.3rem;
+    font-size: 1.2rem;
+    @media (min-width: $breakpoint-mobile) {
+      font-size: 1.4rem;
+    }
+  }
+  &__rating {
+    display: flex;
+    margin-left: $spacing-small;
+    .icon {
+      width: 0.5rem;
+      &:not(:last-child) {
+        margin-right: 0.2rem;
+      }
+    }
+  }
+  &__main-infos {
+    font-size: $font-size-small;
+    color: $color-neutral;
+  }
+  &__services {
+    margin: 0.6rem 0 0.2rem;
+    .icon {
+      width: 1.4rem;
+    }
+  }
+  &__actions {
+    display: flex;
+    flex-direction: column;
+    margin-top: $spacing-medium;
+    @media (min-width: $breakpoint-mobile-landscape) {
+      flex-direction: row;
+      align-items: center;
+    }
+    .link {
+      width: 100%;
+      margin-bottom: 1rem;
+      text-align: center;
+      @media (min-width: $breakpoint-mobile-landscape) {
+        margin-bottom: 0;
+        text-align: left;
+      }
+    }
+  }
+}
+
+// could be placed in another file
+.tripadvisor-rating {
+  display: flex;
+  margin-top: $spacing-small;
+  &__icon {
+    margin-right: $spacing-small;
+  }
+  &__label {
+    font-size: $font-size-small;
+    margin-right: $spacing-small;
+  }
+  &__reviews-number {
+    font-size: $font-size-small;
+    color: $color-neutral;
+  }
+}
+
+.price-section {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  background: $color-clear-secondary;
+  padding: $spacing-x-large $spacing-medium;
+  border-radius: 5px;
+  @media (min-width: $breakpoint-mobile) {
+    margin-top: 0;
+  }
+  &__title {
+    position: absolute;
+    top: -1rem;
+    padding: $spacing-small;
+    background-color: $color-clear;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
+  &__content {
+    text-align: right;
+  }
+  &__label {
+    display: block;
+    margin-bottom: $spacing-small;
+    font-size: $font-size-small;
+    color: $color-neutral;
+  }
+  &__value {
+    font-size: 0.83rem;
+    .price {
+      font-size: 1.05rem;
+      font-weight: bold;
+    }
+    &--member {
+      border-left: 1px solid $color-dark;
+      margin-left: $spacing-small;
+      padding-left: $spacing-small;
+      color: $color-secondary;
+      .price {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

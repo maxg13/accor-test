@@ -1,0 +1,172 @@
+html, body {
+  margin: 0;
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  border: none;
+  border-radius: 15px;
+  background: #008B8B;
+  color: #FFFFFF;
+}
+
+.link {
+  font-size: 0.8rem;
+  color: dodgerblue;
+}
+
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  border-radius: 6px;
+  padding: 1.5rem;
+  -webkit-box-shadow: 0 0 11px -2px #000000;
+  box-shadow: 0 0 11px -2px #000000;
+}
+@media (min-width: 667px) {
+  .hotel-card {
+    flex-direction: row;
+  }
+}
+.hotel-card__img {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 0 1rem;
+  border-radius: 10px;
+}
+@media (min-width: 667px) {
+  .hotel-card__img {
+    width: auto;
+    margin: 0 1.5rem 3rem 0;
+  }
+}
+.hotel-card__infos {
+  flex: 1;
+}
+.hotel-card__header {
+  display: flex;
+  align-items: flex-start;
+}
+.hotel-card__title {
+  margin: 0 0 0.3rem;
+  font-size: 1.2rem;
+}
+@media (min-width: 492px) {
+  .hotel-card__title {
+    font-size: 1.4rem;
+  }
+}
+.hotel-card__rating {
+  display: flex;
+  margin-left: 0.5rem;
+}
+.hotel-card__rating .icon {
+  width: 0.5rem;
+}
+.hotel-card__rating .icon:not(:last-child) {
+  margin-right: 0.2rem;
+}
+.hotel-card__main-infos {
+  font-size: 0.8rem;
+  color: #808080;
+}
+.hotel-card__services {
+  margin: 0.6rem 0 0.2rem;
+}
+.hotel-card__services .icon {
+  width: 1.4rem;
+}
+.hotel-card__actions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+@media (min-width: 667px) {
+  .hotel-card__actions {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.hotel-card__actions .link {
+  width: 100%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+@media (min-width: 667px) {
+  .hotel-card__actions .link {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.tripadvisor-rating {
+  display: flex;
+  margin-top: 0.5rem;
+}
+.tripadvisor-rating__icon {
+  margin-right: 0.5rem;
+}
+.tripadvisor-rating__label {
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+.tripadvisor-rating__reviews-number {
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.price-section {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  background: #ECECEC;
+  padding: 2rem 1rem;
+  border-radius: 5px;
+}
+@media (min-width: 492px) {
+  .price-section {
+    margin-top: 0;
+  }
+}
+.price-section__title {
+  position: absolute;
+  top: -1rem;
+  padding: 0.5rem;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+.price-section__content {
+  text-align: right;
+}
+.price-section__label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  color: #808080;
+}
+.price-section__value {
+  font-size: 0.83rem;
+}
+.price-section__value .price {
+  font-size: 1.05rem;
+  font-weight: bold;
+}
+.price-section__value--member {
+  border-left: 1px solid #000000;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  color: #333580;
+}
+.price-section__value--member .price {
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
